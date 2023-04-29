@@ -1,0 +1,185 @@
+﻿{
+   "CodeGenerationMode": 2,
+   "ContextClassName": "vinculacionUgContext",
+   "ContextNamespace": null,
+   "DefaultDacpacSchema": null,
+   "FilterSchemas": false,
+   "IncludeConnectionString": false,
+   "ModelNamespace": null,
+   "OutputContextPath": null,
+   "OutputPath": "Models",
+   "PreserveCasingWithRegex": true,
+   "ProjectRootNamespace": "WebApplication1",
+   "Schemas": null,
+   "SelectedHandlebarsLanguage": 0,
+   "SelectedToBeGenerated": 0,
+   "Tables": [
+      {
+         "Name": "[dbo].[actividadImagen]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[alumno]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[asignModUser]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Auditoria]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[beneficiariosVinculacion]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[confDom]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[convenioEspecifico]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[convenioMarco]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[fileApp]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[generarProyecto]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[grupoEstudiante]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Imagen]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[instituto]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[maestroInstitucion]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[MasterTable]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[module_mobile]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[modulo]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[personalVinculacion]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[procesos]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[registroActividad]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[vinculacion_config]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[webUser]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[CreateAccount]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[EliminarInstituto]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[EliminarRegistroAlumno]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[ObtenerAlumnoRegistros]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[ObtenerAlumnos]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[ObtenerBeneficiario]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[ObtenerConvenios]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[ObtenerEntidades]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[ObtenerGrupoAlumno]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[ObtenerInstitutos]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[ObtenerPersonalVinculacion]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[ObtenerProcesos]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[ObtenerProyectos]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[ObtenerRegistrosActividades]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[ValidacionAlumnoProyecto]",
+         "ObjectType": 1
+      }
+   ],
+   "UiHint": "DESKTOP-BULGFEJ\\SQLEXPRESS.vinculacionUg",
+   "UncountableWords": null,
+   "UseBoolPropertiesWithoutDefaultSql": false,
+   "UseDatabaseNames": false,
+   "UseDateOnlyTimeOnly": false,
+   "UseDbContextSplitting": false,
+   "UseFluentApiOnly": true,
+   "UseHandleBars": false,
+   "UseHierarchyId": false,
+   "UseInflector": false,
+   "UseLegacyPluralizer": false,
+   "UseManyToManyEntity": false,
+   "UseNoDefaultConstructor": false,
+   "UseNoObjectFilter": false,
+   "UseNodaTime": false,
+   "UseNullableReferences": false,
+   "UseSchemaFolders": false,
+   "UseSpatial": false,
+   "UseT4": false
+}
