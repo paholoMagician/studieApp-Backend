@@ -679,6 +679,10 @@ namespace WebApplication1.Models
                     .HasColumnType("datetime")
                     .HasColumnName("fecCrea");
 
+                entity.Property(e => e.FechaFundacion)
+                    .HasColumnType("datetime")
+                    .HasColumnName("fecha_fundacion");
+
                 entity.Property(e => e.HorasVinc).HasColumnName("horasVinc");
 
                 entity.Property(e => e.Nombre)

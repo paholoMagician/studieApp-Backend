@@ -25,5 +25,6 @@ namespace WebApplication1.Models
         public int? HorasVinc { get; set; }
         public string CodProvincia { get; set; }
         public string CodCanton { get; set; }
+        public DateTime? FechaFundacion { get; set; }
     }
 }
