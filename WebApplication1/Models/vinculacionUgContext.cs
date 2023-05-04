@@ -31,6 +31,7 @@ namespace WebApplication1.Models
         public virtual DbSet<GrupoEstudiante> GrupoEstudiante { get; set; }
         public virtual DbSet<Imagen> Imagen { get; set; }
         public virtual DbSet<Instituto> Instituto { get; set; }
+        public virtual DbSet<LandingConfiguration> LandingConfiguration { get; set; }
         public virtual DbSet<MaestroInstitucion> MaestroInstitucion { get; set; }
         public virtual DbSet<MasterTable> MasterTable { get; set; }
         public virtual DbSet<ModuleMobile> ModuleMobile { get; set; }
@@ -213,6 +214,8 @@ namespace WebApplication1.Models
                 entity.Property(e => e.CodUser)
                     .HasMaxLength(30)
                     .HasColumnName("cod_user");
+
+                entity.Property(e => e.OrderMod).HasColumnName("order_mod");
 
                 entity.Property(e => e.State).HasColumnName("state");
             });
@@ -627,6 +630,16 @@ namespace WebApplication1.Models
                     .IsUnicode(false)
                     .HasColumnName("codcia");
 
+                entity.Property(e => e.CodCanton)
+                    .HasMaxLength(10)
+                    .IsUnicode(false)
+                    .HasColumnName("codCanton");
+
+                entity.Property(e => e.CodProvincia)
+                    .HasMaxLength(10)
+                    .IsUnicode(false)
+                    .HasColumnName("codProvincia");
+
                 entity.Property(e => e.Correo)
                     .HasMaxLength(200)
                     .IsUnicode(false)
@@ -688,6 +701,68 @@ namespace WebApplication1.Models
                     .HasMaxLength(100)
                     .IsUnicode(false)
                     .HasColumnName("web");
+            });
+
+            modelBuilder.Entity<LandingConfiguration>(entity =>
+            {
+                entity.ToTable("landing_configuration");
+
+                entity.Property(e => e.Id).HasColumnName("id");
+
+                entity.Property(e => e.BackgroundImgLanding)
+                    .IsUnicode(false)
+                    .HasColumnName("background_img_landing");
+
+                entity.Property(e => e.BackgroundLanding)
+                    .HasMaxLength(20)
+                    .IsUnicode(false)
+                    .HasColumnName("background_landing");
+
+                entity.Property(e => e.BordeLateralColor)
+                    .HasMaxLength(20)
+                    .IsUnicode(false)
+                    .HasColumnName("borde_lateral_color");
+
+                entity.Property(e => e.BotonIngresoColorLetras)
+                    .HasMaxLength(20)
+                    .IsUnicode(false)
+                    .HasColumnName("boton_ingreso_color_letras");
+
+                entity.Property(e => e.BotonIngresoFondo)
+                    .HasMaxLength(20)
+                    .IsUnicode(false)
+                    .HasColumnName("boton_ingreso_fondo");
+
+                entity.Property(e => e.CodInstituto)
+                    .HasMaxLength(30)
+                    .IsUnicode(false)
+                    .HasColumnName("cod_instituto");
+
+                entity.Property(e => e.EstadoMatriculaRegistro).HasColumnName("estado_matricula_registro");
+
+                entity.Property(e => e.FormularioColorLetras)
+                    .HasMaxLength(20)
+                    .IsUnicode(false)
+                    .HasColumnName("formulario_color_letras");
+
+                entity.Property(e => e.FormularioFondo)
+                    .HasMaxLength(20)
+                    .IsUnicode(false)
+                    .HasColumnName("formulario_fondo");
+
+                entity.Property(e => e.Logotipo)
+                    .IsUnicode(false)
+                    .HasColumnName("logotipo");
+
+                entity.Property(e => e.TituloLanding)
+                    .HasMaxLength(250)
+                    .IsUnicode(false)
+                    .HasColumnName("titulo_landing");
+
+                entity.Property(e => e.TituloTema)
+                    .HasMaxLength(150)
+                    .IsUnicode(false)
+                    .HasColumnName("titulo_tema");
             });
 
             modelBuilder.Entity<MaestroInstitucion>(entity =>

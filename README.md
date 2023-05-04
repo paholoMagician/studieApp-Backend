@@ -1,2 +1,0 @@
-# studieApp-Backend
-WebApi - Servicios

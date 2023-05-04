@@ -24,7 +24,7 @@ namespace WebApplication1.Controllers
 
             string Sentencia = " select a.cod_user, b.* from asignModUser as a " +
                                " left join modulo as b on a.cod_mod = b.id " +
-                               " where a.cod_user = @usCod ";
+                               " where a.cod_user = @usCod order by order_mod asc ";
 
             DataTable dt = new DataTable();
             using (SqlConnection connection = new SqlConnection(_context.Database.GetDbConnection().ConnectionString))

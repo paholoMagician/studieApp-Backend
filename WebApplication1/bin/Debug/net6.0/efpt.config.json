@@ -67,6 +67,10 @@
          "ObjectType": 0
       },
       {
+         "Name": "[dbo].[landing_configuration]",
+         "ObjectType": 0
+      },
+      {
          "Name": "[dbo].[maestroInstitucion]",
          "ObjectType": 0
       },
@@ -163,7 +167,7 @@
          "ObjectType": 1
       }
    ],
-   "UiHint": "DESKTOP-BULGFEJ\\SQLEXPRESS.vinculacionUg",
+   "UiHint": "desktop-bulgfej\\sqlexpress.STUDIEAPP-001.dbo",
    "UncountableWords": null,
    "UseBoolPropertiesWithoutDefaultSql": false,
    "UseDatabaseNames": false,

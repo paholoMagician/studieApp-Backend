@@ -20,7 +20,8 @@ builder.Services.AddSwaggerGen(c => {
 });
 
 //Server = localhost\SQLEXPRESS; Database = master; Trusted_Connection = True;
-var connectionString = "server=localhost\\SQLEXPRESS; database=vinculacionUg; integrated security=true; Encrypt=False;";
+//var connectionString = "server=localhost\\SQLEXPRESS; database=vinculacionUg; integrated security=true; Encrypt=False;";
+var connectionString = "server=localhost\\SQLEXPRESS; database=STUDIEAPP-001; integrated security=true; Encrypt=False;";
 builder.Services.AddDbContext<vinculacionUgContext>(options => options.UseSqlServer(connectionString));
 builder.Services.AddControllersWithViews().AddNewtonsoftJson(options => options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
 IServiceCollection serviceCollection = builder.Services.AddDbContext<vinculacionUgContext>(opt => opt.UseInMemoryDatabase(databaseName: "vinculacionUg"));
