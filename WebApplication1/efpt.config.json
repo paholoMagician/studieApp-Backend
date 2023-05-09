@@ -67,7 +67,7 @@
          "ObjectType": 0
       },
       {
-         "Name": "[dbo].[landing_configuration]",
+         "Name": "[dbo].[landingConfiguration]",
          "ObjectType": 0
       },
       {

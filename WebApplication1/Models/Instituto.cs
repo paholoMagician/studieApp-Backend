@@ -9,14 +9,12 @@ namespace WebApplication1.Models
     {
         public string Codcia { get; set; }
         public string Ruc { get; set; }
-        public string Correo { get; set; }
-        public string Cta1 { get; set; }
-        public string Cta2 { get; set; }
+        public string LicenceCodec { get; set; }
         public string Nombre { get; set; }
         public string Descripcion { get; set; }
-        public int? TelefA { get; set; }
-        public int? TelfB { get; set; }
-        public int? TelfC { get; set; }
+        public string TelefA { get; set; }
+        public string TelfB { get; set; }
+        public string TelfC { get; set; }
         public string Email1 { get; set; }
         public string Email2 { get; set; }
         public string Direccion { get; set; }

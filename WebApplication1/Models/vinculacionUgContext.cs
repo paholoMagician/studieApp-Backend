@@ -621,7 +621,7 @@ namespace WebApplication1.Models
 
             modelBuilder.Entity<Instituto>(entity =>
             {
-                entity.HasKey(e => e.Codcia);
+                entity.HasKey(e => new { e.Codcia, e.LicenceCodec });
 
                 entity.ToTable("instituto");
 
@@ -629,6 +629,11 @@ namespace WebApplication1.Models
                     .HasMaxLength(20)
                     .IsUnicode(false)
                     .HasColumnName("codcia");
+
+                entity.Property(e => e.LicenceCodec)
+                    .HasMaxLength(200)
+                    .IsUnicode(false)
+                    .HasColumnName("licenceCodec");
 
                 entity.Property(e => e.CodCanton)
                     .HasMaxLength(10)
@@ -639,21 +644,6 @@ namespace WebApplication1.Models
                     .HasMaxLength(10)
                     .IsUnicode(false)
                     .HasColumnName("codProvincia");
-
-                entity.Property(e => e.Correo)
-                    .HasMaxLength(200)
-                    .IsUnicode(false)
-                    .HasColumnName("correo");
-
-                entity.Property(e => e.Cta1)
-                    .HasMaxLength(100)
-                    .IsUnicode(false)
-                    .HasColumnName("cta1");
-
-                entity.Property(e => e.Cta2)
-                    .HasMaxLength(100)
-                    .IsUnicode(false)
-                    .HasColumnName("cta2");
 
                 entity.Property(e => e.Descripcion)
                     .HasMaxLength(300)
@@ -695,11 +685,20 @@ namespace WebApplication1.Models
                     .IsUnicode(false)
                     .HasColumnName("ruc");
 
-                entity.Property(e => e.TelefA).HasColumnName("telef_a");
+                entity.Property(e => e.TelefA)
+                    .HasMaxLength(12)
+                    .IsUnicode(false)
+                    .HasColumnName("telefA");
 
-                entity.Property(e => e.TelfB).HasColumnName("telf_b");
+                entity.Property(e => e.TelfB)
+                    .HasMaxLength(12)
+                    .IsUnicode(false)
+                    .HasColumnName("telfB");
 
-                entity.Property(e => e.TelfC).HasColumnName("telf_c");
+                entity.Property(e => e.TelfC)
+                    .HasMaxLength(12)
+                    .IsUnicode(false)
+                    .HasColumnName("telfC");
 
                 entity.Property(e => e.Web)
                     .HasMaxLength(100)
@@ -709,50 +708,50 @@ namespace WebApplication1.Models
 
             modelBuilder.Entity<LandingConfiguration>(entity =>
             {
-                entity.ToTable("landing_configuration");
+                entity.ToTable("landingConfiguration");
 
                 entity.Property(e => e.Id).HasColumnName("id");
 
                 entity.Property(e => e.BackgroundImgLanding)
                     .IsUnicode(false)
-                    .HasColumnName("background_img_landing");
+                    .HasColumnName("backgroundImgLanding");
 
                 entity.Property(e => e.BackgroundLanding)
                     .HasMaxLength(20)
                     .IsUnicode(false)
-                    .HasColumnName("background_landing");
+                    .HasColumnName("backgroundLanding");
 
                 entity.Property(e => e.BordeLateralColor)
                     .HasMaxLength(20)
                     .IsUnicode(false)
-                    .HasColumnName("borde_lateral_color");
+                    .HasColumnName("bordeLateralColor");
 
                 entity.Property(e => e.BotonIngresoColorLetras)
                     .HasMaxLength(20)
                     .IsUnicode(false)
-                    .HasColumnName("boton_ingreso_color_letras");
+                    .HasColumnName("botonIngresoColorLetras");
 
                 entity.Property(e => e.BotonIngresoFondo)
                     .HasMaxLength(20)
                     .IsUnicode(false)
-                    .HasColumnName("boton_ingreso_fondo");
+                    .HasColumnName("botonIngresoFondo");
 
                 entity.Property(e => e.CodInstituto)
                     .HasMaxLength(30)
                     .IsUnicode(false)
-                    .HasColumnName("cod_instituto");
+                    .HasColumnName("codInstituto");
 
-                entity.Property(e => e.EstadoMatriculaRegistro).HasColumnName("estado_matricula_registro");
+                entity.Property(e => e.EstadoMatriculaRegistro).HasColumnName("estadoMatriculaRegistro");
 
                 entity.Property(e => e.FormularioColorLetras)
                     .HasMaxLength(20)
                     .IsUnicode(false)
-                    .HasColumnName("formulario_color_letras");
+                    .HasColumnName("formularioColorLetras");
 
                 entity.Property(e => e.FormularioFondo)
                     .HasMaxLength(20)
                     .IsUnicode(false)
-                    .HasColumnName("formulario_fondo");
+                    .HasColumnName("formularioFondo");
 
                 entity.Property(e => e.Logotipo)
                     .IsUnicode(false)
@@ -761,12 +760,12 @@ namespace WebApplication1.Models
                 entity.Property(e => e.TituloLanding)
                     .HasMaxLength(250)
                     .IsUnicode(false)
-                    .HasColumnName("titulo_landing");
+                    .HasColumnName("tituloLanding");
 
                 entity.Property(e => e.TituloTema)
                     .HasMaxLength(150)
                     .IsUnicode(false)
-                    .HasColumnName("titulo_tema");
+                    .HasColumnName("tituloTema");
             });
 
             modelBuilder.Entity<MaestroInstitucion>(entity =>
