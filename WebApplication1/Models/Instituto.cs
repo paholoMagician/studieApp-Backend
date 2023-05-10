@@ -23,7 +23,5 @@ namespace WebApplication1.Models
         public DateTime FecCrea { get; set; }
         public string Web { get; set; }
         public int? HorasVinc { get; set; }
-        public string CodProvincia { get; set; }
-        public string CodCanton { get; set; }
     }
 }

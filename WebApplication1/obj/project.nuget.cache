@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Z0t+fe6Qh5JIV9Khx4ZuKyJllEAm841axzMXFekpxZbsKn4LvuL53oInGkpqJMkQ8fXaiuEpAQy4lnBHXabvig==",
+  "dgSpecHash": "I4mTzyVDQZpNv/7AM32Up9xLkz0Q5N1mYwUMJ3kHr6fQdWnSyCraO+sHgn0Cp0yZoThTTN4BH3Aycn2ely/kYw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\pahol\\OneDrive\\Desktop\\vinvulacionBackend\\WebApplication1\\WebApplication1\\WebApplication1.csproj",
+  "projectFilePath": "C:\\Users\\pahol\\Desktop\\studieApp-Backend\\WebApplication1\\WebApplication1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\pahol\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\pahol\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

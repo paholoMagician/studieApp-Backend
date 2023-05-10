@@ -18,36 +18,36 @@ namespace WebApplication1.Controllers
             _context = context;
         }
 
-        [HttpPost]
-        [Route("guardarConfiguracionLanding")]
-        public async Task<IActionResult> guardarConfiguracionLanding([FromBody] LandingConfiguration model)
-        {
-            var result = await _context.LandingConfiguration.FirstOrDefaultAsync(x => x.Id == model.Id);
+        //[HttpPost]
+        //[Route("guardarConfiguracionLanding")]
+        //public async Task<IActionResult> guardarConfiguracionLanding([FromBody] LandingConfiguration model)
+        //{
+        //    var result = await _context.LandingConfiguration.FirstOrDefaultAsync(x => x.Id == model.Id);
 
-            if (result == null)
-            {
-                if (ModelState.IsValid)
-                {
-                    _context.LandingConfiguration.Add(model);
-                    if (await _context.SaveChangesAsync() > 0)
-                    {
-                        return Ok(model);
-                    }
-                    else
-                    {
-                        return BadRequest("Datos incorrectos");
-                    }
-                }
-                else
-                {
-                    return BadRequest("ERROR");
-                }
-            }
-            else
-            {
-                return Ok("repetida");
-            }
-        }
+        //    if (result == null)
+        //    {
+        //        if (ModelState.IsValid)
+        //        {
+        //            _context.LandingConfiguration.Add(model);
+        //            if (await _context.SaveChangesAsync() > 0)
+        //            {
+        //                return Ok(model);
+        //            }
+        //            else
+        //            {
+        //                return BadRequest("Datos incorrectos");
+        //            }
+        //        }
+        //        else
+        //        {
+        //            return BadRequest("ERROR");
+        //        }
+        //    }
+        //    else
+        //    {
+        //        return Ok("repetida");
+        //    }
+        //}
 
         [HttpGet("obtenerConfLanding/{codcia}")]
         public async Task<IActionResult> obtenerConfLanding([FromRoute] string codcia)
@@ -104,21 +104,21 @@ namespace WebApplication1.Controllers
 
         }
 
-        [HttpPut]
-        [Route("updateConfLanding/{id}/{codcia}")]
-        public async Task<IActionResult> EditarConvenioMarco([FromRoute] int id, [FromRoute] string codcia, [FromBody] LandingConfiguration model)
-        {
+        //[HttpPut]
+        //[Route("updateConfLanding/{id}/{codcia}")]
+        //public async Task<IActionResult> EditarConvenioMarco([FromRoute] int id, [FromRoute] string codcia, [FromBody] LandingConfiguration model)
+        //{
 
-            if (id != model.Id && codcia != model.CodInstituto )
-            {
-                return BadRequest("No existe esta configuración");
-            }
+        //    if (id != model.Id && codcia != model.CodInstituto )
+        //    {
+        //        return BadRequest("No existe esta configuración");
+        //    }
 
-            _context.Entry(model).State = EntityState.Modified;
-            await _context.SaveChangesAsync();
-            return Ok(model);
+        //    _context.Entry(model).State = EntityState.Modified;
+        //    await _context.SaveChangesAsync();
+        //    return Ok(model);
 
-        }
+        //}
 
     }
 }

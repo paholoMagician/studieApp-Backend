@@ -27,6 +27,10 @@
          "ObjectType": 0
       },
       {
+         "Name": "[dbo].[asignproyprocess]",
+         "ObjectType": 0
+      },
+      {
          "Name": "[dbo].[Auditoria]",
          "ObjectType": 0
       },
@@ -64,10 +68,6 @@
       },
       {
          "Name": "[dbo].[instituto]",
-         "ObjectType": 0
-      },
-      {
-         "Name": "[dbo].[landing_configuration]",
          "ObjectType": 0
       },
       {
@@ -167,7 +167,7 @@
          "ObjectType": 1
       }
    ],
-   "UiHint": "desktop-bulgfej\\sqlexpress.STUDIEAPP-001.dbo",
+   "UiHint": "DESKTOP-BULGFEJ\\SQLEXPRESS.vinculacionUg",
    "UncountableWords": null,
    "UseBoolPropertiesWithoutDefaultSql": false,
    "UseDatabaseNames": false,

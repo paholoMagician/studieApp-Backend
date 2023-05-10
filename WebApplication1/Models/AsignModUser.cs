@@ -11,6 +11,5 @@ namespace WebApplication1.Models
         public string CodMod { get; set; }
         public int? State { get; set; }
         public string CodCia { get; set; }
-        public int? OrderMod { get; set; }
     }
 }

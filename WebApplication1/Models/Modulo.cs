@@ -12,5 +12,6 @@ namespace WebApplication1.Models
         public string ModuleDescription { get; set; }
         public string Icon { get; set; }
         public string Color { get; set; }
+        public int? OrderMod { get; set; }
     }
 }
